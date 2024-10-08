@@ -12,18 +12,61 @@
 		td{text-align: center;padding: 15px;}
 		.font1{ font-size:40px; }
 		.font2{ font-size:30px; }
+
+		.navbar{
+		  overflow: hidden;
+		  background-color: #333;
+		  position: fixed;
+		  top: 0;
+		  width: 100%;
+		}
+
+		.navbar a {
+		  float: left;
+		  display: block;
+		  color: #f2f2f2;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		  font-size: 17px;
+		}
+
+		.navbar a:hover {
+		  background: #ddd;
+		  color: black;
+		}
+
+		.main {
+		  padding: 16px;
+		  margin-top: 30px;
+		  height: 1500px; /*Used in this example to enable to enable scrolling */
+		}
+
+
 	</style>
 
 </head>
 <body>
+
+	<div id="home" class="navbar">
+  <a href="#home">台中市</a>
+  <a href="#s1">台中國家歌劇院</a>
+  <a href="#s2">台中州廳</a>
+  <a href="#s3">審計新村</a>
+	</div>
+
+	<div id="home"></div>
+	<br>
+	<br>
+    <br>
 
 	<div id="container">
 	<table>
 	<tr>
 		<td colspan="2">
 			<div class="font1">台中市景點推薦</div>
-
-			<img class="round_img2" src="00.jpeg">
+			<br>
+			<img class="round_img2"src="00.jpeg">
 		</td>
 	</tr>
 	
@@ -39,8 +82,9 @@
 	</tr>
 	<tr>
 		<td>
-			<img class="round_img" src="01.jpeg">
+			<img id="s1" class="round_img" src="01.jpeg">
 		</td>
+</tr>		
 		<td>
 			<div class="font2">台中國家歌劇院</div>
 			台中國家歌劇院位於台中市西屯區，是極具特色的大型公有展演空間，由日本建築師伊東豊雄設計，以人類最原始的「洞窟」、「地穴」的概念設計成世界獨一無二的美聲涵洞曲牆建築，歷時五年時間完成、耗資43.6億元，終在2014年11月23日落成啟用，內部規劃有大劇院、中劇院及小型實驗劇場，共可容納約三千餘人。
@@ -54,13 +98,13 @@
 			臺中州廳位於台中市西區，為一座國定古蹟，二戰後由台中市政府遷入辦公，由於該建築原為日治時期的臺中州廳（即「州政府」），因而沿用此稱呼。周邊鄰近台中文學公園、台中刑務所演武場、宮原眼科等熱門景點。
 		</td>
 		<td>
-			<img class="round_img" src="02.jpeg">
+			<img id="s2" class="round_img" src="02.jpeg">
 		</td>
 	</tr>
 	
 	<tr>
 		<td>
-			<img class="round_img" src="03.jpeg">
+			<img id="s3" class="round_img" src="03.jpeg">
 		</td>
 		<td>
 			<div class="font2">審計新村</div>
@@ -68,12 +112,20 @@
 		</td>
 	</tr>
 	
+
 	<tr>
-		<td height="50px" bgcolor="black" colspan="2">
+		<td colspan="2">
+			<iframe src="https://www.google.com/maps/d/embed?mid=1LikEnsjlHKVKs5jA2WdxcgSzETnTjzY&ehbc=2E312F" width="1024" height="800"></iframe>">
+		<td/>
+	<tr/>
+
+
+<tr>
+	<td height="50px" bgcolor="black" colspan="2">
 			<font color="white">馬玉綺製作2024</font>
-		</td>
+	</td>
 	
-	</tr>
+</tr>
 </table>
 
 
